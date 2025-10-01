@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Timeless Insurance - Sign Up</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .login {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    }
+
+    .logo {
+        padding-bottom: 20px;
+    }
+    
+    .logo img {
+        width: 150px;
+        height: auto;
+    }
+    .signup-container {
+      background-color: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      width: 300px;
+      text-align: center;
+    }
+
+    .signup-container h2 {
+      margin-bottom: 20px;
+    }
+
+    input[type="text"],
+    input[type="password"] {
+      width: 92%;
+      padding: 10px;
+      margin: 10px 0;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+
+    .error-message {
+      color: rgb(206, 0, 0);;
+      font-size: 13px;
+      margin-bottom: 10px;
+      display: none;
+      text-align: left;
+    }
+
+    button {
+      width: 100%;
+      padding: 10px;
+      background-color: rgb(206, 0, 0);
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: rgb(206, 0, 0);;
+    }
+
+    .login-link {
+      margin-top: 15px;
+      display: block;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+
+    <div class="login">
+        <div class="logo">
+            <img src="/images/Logo.png" alt="Logo">
+        </div>
+
+  <div class="signup-container">
+    <h2>Sign Up - Timeless Insurance</h2>
+
+    <form action="signup.php" method="POST" id="signupForm">
+      <input name="username" type="text" id="username" placeholder="Username" required><br>
+
+      <input name="password" type="password" id="password" placeholder="Password" required><br>
+
+      <div id="passwordError" class="error-message">Password must be at least 8 characters.</div>
+      <button type="submit">Sign Up</button>
+    </form>
+
+    <a class="login-link" href="login.html">Already have an account? Log in</a>
+  </div>
+</div>
+
+  <script>
+    const form = document.getElementById('signupForm');
+    const password = document.getElementById('password');
+    const passwordError = document.getElementById('passwordError');
+
+    form.addEventListener('submit', function(event) {
+      if (password.value.length < 8) {
+        passwordError.style.display = 'block';
+        event.preventDefault(); // Stop form from submitting
+      } else {
+        passwordError.style.display = 'none';
+      }
+    });
+
+    // Also update error message while typing
+    password.addEventListener('input', function() {
+      if (password.value.length >= 8) {
+        passwordError.style.display = 'none';
+      } else {
+        passwordError.style.display = 'block';
+      }
+    });
+  </script>
+</body>
+</html>

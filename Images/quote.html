@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insurance Quote - Timeless Insurance</title>
+
+    <link rel="stylesheet" href="nav.css">
+    <script src="quote.js">  </script>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 40%;
+            margin: 50px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            text-align: center;
+            color: rgba(206, 0, 0);
+        }
+        label {
+            font-weight: bold;
+            display: block;
+            margin-top: 10px;
+        }
+        input, select, textarea {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            border: none;
+            border-bottom: 1px solid rgba(206, 0, 0);
+            outline: none;
+        }
+        button {
+            width: 100%;
+            background: rgba(206, 0, 0);
+            color: white;
+            padding: 10px;
+            border: none;
+            margin-top: 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: rgb(0, 0, 0);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="nav-wrapper">
+
+
+        <div class="center-column">
+       
+            <div class="logo">
+                <img src="images/Logo.png" alt="Logo">
+            </div>
+    
+            <!-- Link wrapper -->
+            <div class="links-wrapper">
+    
+    
+                <!-- Nav link -->
+                <div class="nav-link">
+                <a href="index.html">Home</a>
+                </div>
+    
+                <!-- Nav link -->
+                <div class="nav-link">
+                <a href="about.html">About</a>
+                </div>
+    
+                <!-- Nav link -->
+                <div class="nav-link">
+                <a href="services.html">Services</a>
+                </div>
+    
+                <!-- Nav link -->
+                <div class="nav-link">
+                <a href="contact.html">Contact</a>
+                </div>
+                
+            </div>
+            
+        </div>
+        </div>
+
+    <div class="container">
+        <h2>Get a Quote - Timeless Insurance</h2>
+        <form  action="quotes.php" method="POST" id="myForm2">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name">
+
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email">
+
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone">
+
+            <label for="insurance-type">Select Insurance Type</label>
+            <select id="insurance-type" name="insurance_type">
+                <option value="auto">Auto Insurance</option>
+                <option value="home">Home Insurance</option>
+                <option value="health">Health Insurance</option>
+                <option value="life">Life Insurance</option>
+                <option value="business">Business Insurance</option>
+            </select>
+
+            <label for="coverage">Coverage Amount</label>
+            <input type="number" id="coverage" name="coverage">
+
+            <label for="details">Additional Details</label>
+            <textarea id="details" name="details" rows="4"></textarea>
+
+            <button type="submit" id="myRequest">Request Quote</button>
+        </form>
+    </div>
+
+<script src="quote.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,310 @@
+/*common nav styles */
+.nav-wrapper{
+    height: 150px;
+    background-color: white;
+    /* flexbox container */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 20px;
+}
+
+
+/* Center column styles */
+.links-wrapper > .nav-link{
+    width: 100px;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.nav-link a {
+    font-family: 'Roboto', sans-serif;
+    color: rgb(206, 0, 0);
+    font-weight: 700;
+    text-decoration-line: none;
+    transition: 0.5s;
+}
+
+#active{
+    color: black;
+}
+
+.nav-link a:hover{
+    color: black;
+    letter-spacing: 2px;
+}
+
+.logo img {
+    width: 150px;
+}
+
+.nav-wrapper > .center-column{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 35px;
+    width: 100%;
+}
+
+.nav-wrapper > .center-column > .logo{
+    display: flex;
+    justify-content: center;
+}
+
+.links-wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Homepage */
+.container1 {
+    background-image: url(/Images/image1.jpg);
+    padding: 100px;
+    height: 500px;
+    background-attachment: scroll;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.centered {
+    color: whitesmoke;
+    text-align: center;
+    margin-top: 4%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 4vw;
+    font-weight: bolder;
+}
+.handshake {
+    width: 100%;
+    height: 800px;
+}
+
+/* buttons */
+button {
+    color: white;
+    background-color: rgb(206, 0, 0);
+    font-size: 1rem;
+    padding: 0.5rem 2rem ;
+    border-radius: 7px;
+    font-weight: bold;
+    margin-top: 250px;
+    border: none;
+  }
+button a {
+    color: white;
+    text-decoration-line: none;
+}
+button:hover {
+    background-color: black;
+    border: none;
+  }
+.center {
+    color: whitesmoke;
+    text-align: center;
+    margin-top: 3%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 4vw;
+    font-weight: bolder;
+} 
+.service {
+    font-size: 0.7rem;
+    padding: 0.5rem 1rem;
+    margin-top: 5px;
+}
+
+/* Footer */
+.footer1 {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    margin-top: 10rem;
+    background-color: rgb(206, 0, 0);
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+.address {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1rem;
+    color: whitesmoke;
+}
+.address h2 {
+    padding-bottom: 15px;
+}
+.address p {
+    padding-bottom: 15px;
+    font-size: 1rem;
+}
+.fa-instagram {
+    font-size: 2rem;
+    padding: 1rem;
+}
+.fa-square-facebook {
+    font-size: 2rem;
+    padding: 1rem;
+}
+.fa-x-twitter {
+    font-size: 2rem;
+    padding: 1rem;
+}
+.footer2 {
+    background-color: rgb(0, 0, 0);
+    font-size: 0.8rem;
+    color: whitesmoke;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* About */
+.about {
+    width: 80%;
+    margin: 50px auto;
+}
+.about h1 {
+    font-size: 6vw;
+    
+}
+.about h2 {
+    font-size: 2.5vw;
+    color: rgb(206, 0, 0);
+}
+.about p {
+    font-size: 1.2vw;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.about li {
+    font-size: 1.2vw;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Square grid styles */
+.squares-wrapper{
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.squares-wrapper > .squares{
+    width: 1000px;
+}
+
+.squares-wrapper > .squares > .square{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: -5px;
+}
+
+.square > .img-wrapper img{
+    width: 100%;
+    height: 480px;
+    object-fit: cover;
+}
+
+.square > .square-text-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.2vw;
+    margin: 8px;
+}
+
+.square > .square-text-wrapper h2{
+    color: rgb(206, 0, 0);
+    font-size: 2vw;
+}
+
+/* Contact Form */
+.form1 {
+    width: 80%;
+    margin: 50px auto;
+}
+.contact-box {
+    background-color: whitesmoke;
+    display: flex;
+}
+.contact-left {
+    flex-basis: 60%;
+    padding: 40px 60px;
+}
+.contact-right {
+    flex-basis: 40%;
+    padding: 40px;
+    background-color: rgb(206, 0, 0);
+    color: white;
+}
+.form1 h1 {
+    margin-bottom: 40px;
+    font-size: 6vw;
+}
+.form1 h2 {
+    margin-bottom: 40px;
+}
+.form1 p {
+    font-size: 1.5vw;
+    margin-bottom: 40px;
+}
+.input-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+.input-row .input-group {
+    flex-basis: 45%;
+}
+.input-row .input-group input {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid rgb(206, 0, 0);
+    outline: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.input-row .input-group label {
+    font-weight: bold;
+}
+.contact-left label {
+    font-weight: bold;
+}
+textarea {
+    width: 100%;
+    border: 1px solid rgb(206, 0, 0);
+    outline: none;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.contact-left button {
+    background-color: rgb(206, 0, 0);
+    width: 100px;
+    border: none;
+    outline: none;
+    color: whitesmoke;
+    height: 35px;
+    border-radius: 30px;
+    margin-top: 20px;
+}
+.contact-left button:hover {
+    background-color: black;
+    color: whitesmoke;
+    box-shadow: 0px 5px 15px 0px rgba(28,0,181,0.3);
+}
+.contact-left h2 {
+    color: rgb(206, 0, 0);
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+.contact-right h2 {
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+tr td:first-child {
+    padding-right: 30px;
+}
+tr td {
+    padding-bottom: 20px;
+}
+.contact-right img{
+    width: 25vw;
+}
